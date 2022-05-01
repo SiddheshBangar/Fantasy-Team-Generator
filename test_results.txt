@@ -1,0 +1,25 @@
+2022-05-01 17:33:45.761469
+******************************Random Forest******************************
+Best MSE for Random Forest Regressor:  -0.06105043959905822
+Best Parameters for Random Forest Regressor: Estimators: Pipeline(steps=[('randomforestregressor',
+                 RandomForestRegressor(criterion='mse', n_estimators=300,
+                                       random_state=0))]) and Min Samples Split: 5 Params: {'randomforestregressor__min_samples_split': 2, 'randomforestregressor__n_estimators': 300}
+Training Error: 0.007489867697059359 Testing Error: 0.0533640413714345
+******************************Ridge Linear Regression******************************
+Best MSE:  -5.421513017389556
+Best Parameters:  Pipeline(steps=[('ridge', Ridge(alpha=0.0001, solver='lsqr'))])
+Training Error: 5.416881283958868 Testing Error: 5.552216059502164
+******************************LinearRegression******************************
+Best MSE:  -0.27619474345746475
+Best Parameters:  Pipeline(steps=[('linearregression', LinearRegression())])
+Training Error: 0.2730456570771752 Testing Error: 0.2795591494727616
+******************************Gradient Boosting******************************
+Best MSE:  -0.06314361269769203
+Best Parameters:  Pipeline(steps=[('gradientboostingregressor',
+                 GradientBoostingRegressor(n_estimators=250))])
+Training Error: 0.05682767431646722 Testing Error: 0.06204156784492525
+******************************LASSO Linear******************************
+Best MSE:  -0.28195087233776905
+Best Parameters:  Pipeline(steps=[('lasso', Lasso(alpha=0.001))])
+Training Error: 0.2795486393553375 Testing Error: 0.283653444104134
+2022-05-01 18:07:17.312545
